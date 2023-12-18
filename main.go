@@ -18,11 +18,15 @@ func HandleRoot(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 		case "GET":
 			fmt.Println("GET method")
+			fmt.Fprint(w, "Sent")
 		case "POST":
 			fmt.Println("POST method")
+			fmt.Fprint(w, "Sent")
 		case "PUT":
 			fmt.Println("PUT method")
+			fmt.Fprint(w, "Sent")
 		case "DELETE":
 			fmt.Println("Delete method")
+			fmt.Fprint(w, "Sent")
 	}
 }
